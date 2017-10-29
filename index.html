@@ -1,0 +1,100 @@
+<html><head>
+
+    <title>Taarangana GALLERY</title>
+	<link rel="stylesheet" type="text/css" href="fancybox\dist\jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+	
+	<script src="js/aframe.min.js"></script>
+    <script src="js/build1.js"></script><!--for text -->
+	<script src="js/build2.js"></script><!--for audio bars -->
+	
+	    <script src="js/aframe-orbit-controls-component.js"></script>
+    <script src="js/kframe/aframe-look-at-component.min.js"></script>
+    <script src="js/isvr-vr-mode.js"></script>
+    <script src="js/isvr-model-center.js"></script>
+    <script src="js/isvr-hotspot.js"></script>
+    <script src="js/isvr-annotation.js"></script>
+    <script src="js/isvr-teleportation.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+	
+    </head>
+<body class="a-body " >
+<div id="snackbar">Scroll around the screen to explore more</div> 
+<a-scene vr-mode-ui="enabled: false">
+
+	
+	<a-assets>
+        <img id="pink" src="https://img.gs/bbdkhfbzkk/stretch/http://i.imgur.com/1hyyIUi.jpg" crossorigin="anonymous">
+        <img src="https://img.gs/bbdkhfbzkk/2048x1024,stretch/http://i.imgur.com/WMNH2OF.jpg" id="chrome" crossorigin="anonymous">
+		<a-mixin id="bar" geometry="primitive: box;width:3;depth:3;height:7;"></a-mixin>
+        </a-assets>
+	  <!--camera-->
+                <a-entity id="camera" camera="fov:85" position="-10 0 0" rotation="-7 50 3" cursor="rayOrigin:mouse" orbit-controls="
+				maxPolarAngle:3.142;
+				target:#model;
+				minDistance:18;
+				maxDistance:35" raycaster="origin:4.981809616088867 2.0047125816345215 0.3100601136684418;direction:-0.9625493654871191 -0.11539700112136334 -0.24532071076967893;useWorldCoordinates:true">
+                </a-entity>		
+		
+				
+     <!--model-->     
+     <a-entity> 
+          <a-curvedimage src="img/bg/pic29.jpg" radius="30" theta-length="28" position="0 -1 0" height="9" theta-start="0"></a-curvedimage>
+		   <a-curvedimage src="img/bg/pic30.jpg" radius="30" theta-length="28" position="0 -1 0" height="9" theta-start="30"></a-curvedimage>
+		    <a-curvedimage src="img/bg/pic31.jpg" radius="30" theta-length="28" position="0 -1 0" height="9" theta-start="60"></a-curvedimage>
+			 <a-curvedimage src="img/bg/pic32.jpg" radius="30" theta-length="28" position="0 -1 0" height="9" theta-start="90"></a-curvedimage>
+			 <a-curvedimage src="img/bg/pic17.jpg" radius="30" theta-length="28" position="0 -1 0" height="9" theta-start="120"></a-curvedimage>
+			  <a-curvedimage src="img/bg/pic34.jpg" radius="30" theta-length="28" position="0 -1 0" height="9" theta-start="150"></a-curvedimage>
+			  <a-curvedimage src="img/bg/pic35.jpg" radius="30" theta-length="28" position="0 -1 0" height="9" theta-start="180"></a-curvedimage>
+			  <a-curvedimage src="img/bg/pic36.jpg" radius="30" theta-length="28" position="0 -1 0" height="9" theta-start="210"></a-curvedimage>
+			 <a-curvedimage src="img/bg/pic37.jpg" radius="30" theta-length="28" position="0 -1 0" height="9" theta-start="240"></a-curvedimage>
+			  <a-curvedimage src="img/bg/pic38.jpg" radius="30" theta-length="28" position="0 -1 0" height="9" theta-start="270"></a-curvedimage>
+			  <a-curvedimage src="img/bg/pic39.jpg" radius="30" theta-length="28" position="0 -1 0" height="9" theta-start="300"></a-curvedimage>
+			 <a-curvedimage src="img/bg/pic40.jpg" radius="30" theta-length="28" position="0 -1 0" height="9" theta-start="330"></a-curvedimage>
+			  <a-curvedimage src="img/bg/pic13.jpg" radius="30" theta-length="28" position="0 -1 0" height="9" theta-start="330"></a-curvedimage>
+	          <a-curvedimage src="img/bg/pic14.jpg" radius="30" theta-length="28" position="0 -1 0" height="9" theta-start="330"></a-curvedimage>
+	    <a-animation attribute="rotation" from="0 0 0" to="0 180 0" dur="30000" easing="linear" repeat="indefinite"></a-animation>
+	    </a-entity>           
+		<a-entity> 
+          <a-curvedimage src="img/bg/pic1.png" radius="20" theta-length="28" end="click" position="0 10 0" height="9" theta-start="0"></a-curvedimage>
+		   <a-curvedimage src="img/bg/pic2.png" radius="20" theta-length="28" end="click" position="0 10 0" height="9" theta-start="30"></a-curvedimage>
+		    <a-curvedimage src="img/bg/pic3.png" radius="20" theta-length="28" end="click" position="0 10 0" height="9" theta-start="60"></a-curvedimage>
+			 <a-curvedimage src="img/bg/pic4.png" radius="20" theta-length="28" end="click" position="0 10 0" height="9" theta-start="90"></a-curvedimage>
+			 <a-curvedimage src="img/bg/pic5.jpg" radius="20" theta-length="28" end="click" position="0 10 0" height="9" theta-start="120"></a-curvedimage>
+			  <a-curvedimage src="img/bg/pic6.png" radius="20" theta-length="28" end="click" position="0 10 0" height="9" theta-start="150"></a-curvedimage>
+			  <a-curvedimage src="img/bg/pic7.png" radius="20" theta-length="28" end="click" position="0 10 0" height="9" theta-start="180"></a-curvedimage>
+			  <a-curvedimage src="img/bg/pic8.png" radius="20" theta-length="28" end="click" position="0 10 0" height="9" theta-start="210"></a-curvedimage>
+			 <a-curvedimage src="img/bg/pic9.png" radius="20" theta-length="28" end="click" position="0 10 0" height="9" theta-start="240"></a-curvedimage>
+			  <a-curvedimage src="img/bg/pic10.png" radius="20" theta-length="28" end="click" position="0 10 0" height="9" theta-start="270"></a-curvedimage>
+			  <a-curvedimage src="img/bg/pic11.png" radius="20" theta-length="28" end="click" position="0 10 0" height="9" theta-start="300"></a-curvedimage>
+			 <a-curvedimage src="img/bg/pic12.png" radius="20" theta-length="28" end="click" position="0 10 0" height="9" theta-start="330"></a-curvedimage>
+			  <a-curvedimage src="img/bg/pic13.png" radius="20" theta-length="28" end="click" position="0 10 0" height="9" theta-start="330"></a-curvedimage>
+	          <a-curvedimage src="img/bg/pic14.png" radius="20" theta-length="28" end="click" position="0 10 0" height="9" theta-start="330"></a-curvedimage>
+	    <a-animation attribute="rotation" from="0 0 0" to="0 -180 0" dur="30000" easing="linear" repeat="indefinite"></a-animation>
+	    </a-entity><a-entity> 
+          <a-curvedimage src="img/bg/pic15.jpg" radius="40" theta-length="28" end="click" position="0 -14 0" height="9" theta-start="0"></a-curvedimage>
+		   <a-curvedimage src="img/bg/pic16.jpg" radius="40" theta-length="28" end="click" position="0 -14 0" height="9" theta-start="30"></a-curvedimage>
+		    <a-curvedimage src="img/bg/pic17.jpg" radius="40" theta-length="28" end="click" position="0 -14 0" height="9" theta-start="60"></a-curvedimage>
+			 <a-curvedimage src="img/bg/pic18.jpg" radius="40" theta-length="28" end="click" position="0 -14 0" height="9" theta-start="90"></a-curvedimage>
+			 <a-curvedimage src="img/bg/pic19.jpg" radius="40" theta-length="28" end="click" position="0 -14 0" height="9" theta-start="120"></a-curvedimage>
+			  <a-curvedimage src="img/bg/pic20.jpg" radius="40" theta-length="28" end="click" position="0 -14 0" height="9" theta-start="150"></a-curvedimage>
+			  <a-curvedimage src="img/bg/pic21.jpg" radius="40" theta-length="28" end="click" position="0 -14 0" height="9" theta-start="180"></a-curvedimage>
+			  <a-curvedimage src="img/bg/pic22.jpg" radius="40" theta-length="28" end="click" position="0 -14 0" height="9" theta-start="210"></a-curvedimage>
+			 <a-curvedimage src="img/bg/pic23.jpg" radius="40" theta-length="28" end="click" position="0 -14 0" height="9" theta-start="240"></a-curvedimage>
+			  <a-curvedimage src="img/bg/pic24.jpg" radius="40" theta-length="28" end="click" position="0 -14 0" height="9" theta-start="270"></a-curvedimage>
+			  <a-curvedimage src="img/bg/pic25.jpg" radius="40" theta-length="28" end="click" position="0 -14 0" height="9" theta-start="300"></a-curvedimage>
+			 <a-curvedimage src="img/bg/pic26.jpg" radius="40" theta-length="28" end="click" position="0 -14 0" height="9" theta-start="330"></a-curvedimage>
+			  <a-curvedimage src="img/bg/pic27.jpg" radius="40" theta-length="28" end="click" position="0 -14 0" height="9" theta-start="330"></a-curvedimage>
+	           <a-curvedimage src="img/bg/pic28.jpg" radius="40" theta-length="28" end="click" position="0 -14 0" height="9" theta-start="330"></a-curvedimage>
+	    <a-animation attribute="rotation" from="0 0 0" to="0 180 0" dur="30000" easing="linear" repeat="indefinite"></a-animation>
+	    </a-entity> 
+		<a-entity light="color:#BBB;type:ambient" data-aframe-default-light="" aframe-injected=""></a-entity>
+		<a-entity light="intensity:0.6" position="-0.5 1 1" data-aframe-default-light="" aframe-injected=""></a-entity>
+			
+      <a-entity id="model">
+        <a-box position="0 0.5 0" width="150" height="35" depth="100" side="back" src="superhero.jpg"
+                    color="#FFF"></a-box>
+      </a-entity>
+    </a-scene>
+     </body>
+</html>
